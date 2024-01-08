@@ -9,7 +9,7 @@ const Hero = () => {
     <section>
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <div className="col-span-7 place-self-center text-center sm:text-left">
-          <h1 className="text-white mb-4 text-4xl lg:text-6xl font-extrabold">
+          <h1 className="text-white mb-4 text-5xl lg:text-6xl font-extrabold">
             <span
               className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400  
             to-pink-400"
@@ -17,10 +17,11 @@ const Hero = () => {
               Hello, I'm{" "}
             </span>
             <br />
+            Arbaaz Sumar
+          </h1>
+          <p className="text-[#ADB7BE] text:lg lg:text-xl mb-6">
             <TypeAnimation
               sequence={[
-                "Arbaaz Sumar",
-                1000,
                 "Front-End Developer",
                 1000,
                 "React Developer",
@@ -32,19 +33,13 @@ const Hero = () => {
               speed={20}
               repeat={Infinity}
             />
-          </h1>
-          <p className="text-[#ADB7BE] text:lg lg:text-xl mb-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-            voluptates consequuntur quidem, pariatur amet impedit reiciendis
-            corporis quae placeat voluptate cumque numquam totam ratione error
-            nemo aspernatur fugit deserunt distinctio?
           </p>
           <div className="">
             <button
               className="px-6 py-3 rounded-full w-full sm:w-fit mr-4 bg-gradient-to-br
               from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white"
             >
-              Email me
+              Contact me
             </button>
             <button
               className="px-1 py-1 rounded-full w-full sm:w-fit bg-transparent 
