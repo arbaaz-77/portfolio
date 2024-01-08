@@ -1,5 +1,8 @@
+"use client";
 import React from "react";
 import Image from "next/image";
+
+import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
   return (
@@ -14,7 +17,21 @@ const Hero = () => {
               Hello, I'm{" "}
             </span>
             <br />
-            Arbaaz
+            <TypeAnimation
+              sequence={[
+                "Arbaaz Sumar",
+                1000,
+                "Front-End Developer",
+                1000,
+                "React Developer",
+                1000,
+                "Mobile Developer",
+                1000,
+              ]}
+              wrapper="span"
+              speed={20}
+              repeat={Infinity}
+            />
           </h1>
           <p className="text-[#ADB7BE] text:lg lg:text-xl mb-6">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
