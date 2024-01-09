@@ -37,7 +37,7 @@ const Hero = () => {
           <div className="">
             <button
               className="px-6 py-3 rounded-full w-full sm:w-fit mr-4 bg-gradient-to-br
-              from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white"
+              from-blue-500 via-purple-500 to-pink-500 hover:text-slate-200 text-white"
             >
               Contact me
             </button>
@@ -46,7 +46,7 @@ const Hero = () => {
             hover:bg-slate-800 text-white bg-gradient-to-br
               from-blue-500 via-purple-500 to-pink-500 mt-3"
             >
-              <span className="block bg-[#121212] hover:text-slate-800 rounded-full px-5 py-2">
+              <span className="block bg-[#121212] hover:text-slate-300 rounded-full px-5 py-2">
                 Download CV
               </span>
             </button>
