@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { FaCode, FaEye } from "react-icons/fa";
 
-const ProjectCard = ({ imgUrl, title, desc, gitUrl, liveUrl }) => {
+const ProjectCard = ({ imgUrl, title, desc, tags, gitUrl, liveUrl }) => {
   return (
     <div>
       <div
@@ -41,6 +41,16 @@ const ProjectCard = ({ imgUrl, title, desc, gitUrl, liveUrl }) => {
       <div className="text-white rounded-b-xl mt-3 bg-[#181818] py-6 px-4">
         <h5 className="text-xl font-semibold mb-2">{title}</h5>
         <p className="text-[#ADB7BE]">{desc}</p>
+        <ul className="flex space-x-7 text-black mt-4">
+          {tags.map((tag) => (
+            <li
+              key={tag}
+              className="bg-purple-300 py-1 px-2 rounded-full text-sm font-semibold"
+            >
+              {tag}
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );

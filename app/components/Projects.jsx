@@ -4,7 +4,7 @@ import { PROJECTS_DATA } from "../data";
 
 const Projects = () => {
   return (
-    <>
+    <section id="projects">
       <h2 className="text-center text-4xl font-bold text-white my-6">
         Projects
       </h2>
@@ -15,12 +15,13 @@ const Projects = () => {
             imgUrl={project.image}
             title={project.title}
             desc={project.desc}
+            tags={project.tags}
             gitUrl={project.gitUrl}
             liveUrl={project.liveUrl}
           />
         ))}
       </div>
-    </>
+    </section>
   );
 };
 
