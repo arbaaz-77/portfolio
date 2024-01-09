@@ -5,7 +5,7 @@ import NavLink from "./NavLink";
 import MenuOverlay from "./MenuOverlay";
 import SocialLinks from "./SocialLinks";
 
-const linkNames = ["projects", "about"];
+const linkNames = ["about", "projects"];
 
 const Navbar = () => {
   const [isNavbarOpen, setisNavbarOpen] = useState(false);
