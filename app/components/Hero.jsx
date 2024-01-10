@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 
 import { TypeAnimation } from "react-type-animation";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -14,7 +15,7 @@ const Hero = () => {
               className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400  
             to-pink-400"
             >
-              Hello, I'm{" "}
+              Hello, I&apos;m{" "}
             </span>
             <br />
             Arbaaz Sumar
@@ -38,18 +39,26 @@ const Hero = () => {
             <button
               className="px-6 py-3 rounded-full w-full sm:w-fit mr-4 bg-gradient-to-br
               from-blue-500 via-purple-500 to-pink-500 hover:text-slate-200 text-white"
+              onClick={() => (window.location = "mailto:arbaaz970@gmail.com")}
             >
               Contact me
             </button>
-            <button
-              className="px-1 py-1 rounded-full w-full sm:w-fit bg-transparent 
-            hover:bg-slate-800 text-white bg-gradient-to-br
-              from-blue-500 via-purple-500 to-pink-500 mt-3"
+            <Link
+              href={
+                "https://drive.google.com/file/d/1XWVEyWCCJZiPxiP8_fjZ7NVm8ip_tDgE/view?usp=sharing"
+              }
+              target="_blank"
             >
-              <span className="block bg-[#121212] hover:text-slate-300 rounded-full px-5 py-2">
-                Download CV
-              </span>
-            </button>
+              <button
+                className="px-1 py-1 rounded-full w-full sm:w-fit bg-transparent 
+              hover:bg-slate-800 text-white bg-gradient-to-br
+              from-blue-500 via-purple-500 to-pink-500 mt-3"
+              >
+                <span className="block bg-[#121212] hover:text-slate-300 rounded-full px-5 py-2">
+                  View CV
+                </span>
+              </button>
+            </Link>
           </div>
         </div>
         <div className="col-span-5 place-self-center mt-4 lg:mt-0">
@@ -58,7 +67,7 @@ const Hero = () => {
           lg:h-[400px] relative"
           >
             <Image
-              src="/hero.jpg"
+              src="/hero.png"
               alt="hero-image"
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               width={300}
