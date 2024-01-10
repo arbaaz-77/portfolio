@@ -4,7 +4,7 @@ import { PROJECTS_DATA } from "../data";
 
 const Projects = () => {
   return (
-    <section id="projects">
+    <div id="projects">
       <h2 className="text-center text-4xl font-bold text-white my-6">
         Projects
       </h2>
@@ -21,7 +21,7 @@ const Projects = () => {
           />
         ))}
       </div>
-    </section>
+    </div>
   );
 };
 

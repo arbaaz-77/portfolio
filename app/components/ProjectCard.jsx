@@ -40,8 +40,8 @@ const ProjectCard = ({ imgUrl, title, desc, tags, gitUrl, liveUrl }) => {
       </div>
       <div className="text-white rounded-b-xl mt-3 bg-[#181818] py-6 px-4">
         <h5 className="text-xl font-semibold mb-2">{title}</h5>
-        <p className="text-[#ADB7BE]">{desc}</p>
-        <ul className="flex space-x-7 text-black mt-4">
+        <p className="text-md text-[#ADB7BE]">{desc}</p>
+        <ul className="flex justify-between text-black mt-4">
           {tags.map((tag) => (
             <li
               key={tag}
