@@ -42,6 +42,15 @@ export const TAB_DATA = [
 export const PROJECTS_DATA = [
   {
     id: 1,
+    title: "GameHub",
+    desc: "React App using ChakraUI and RAWGAPI to search and view your favourite games",
+    image: "/images/gamehub.png",
+    tags: ["React", "ChakraUI", "RAWG API"],
+    gitUrl: "https://github.com/arbaaz-77/gamehub",
+    liveUrl: "https://gamehub-lac.vercel.app/",
+  },
+  {
+    id: 2,
     title: "PhotoBooth",
     desc: "Photobooth allows users to sign in using Google auth, upload images, view other images as well as download and comment on them",
     image: "/images/photobooth.png",
@@ -50,7 +59,7 @@ export const PROJECTS_DATA = [
     liveUrl: "https://photobooth-arbaaz.netlify.app/",
   },
   {
-    id: 2,
+    id: 3,
     title: "Kings Gym",
     desc: "Fitness App consisting of GIFS to showcase various exercises.",
     image: "/images/gym.png",
@@ -59,7 +68,7 @@ export const PROJECTS_DATA = [
     liveUrl: "https://kings-gym.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     title: "Cool Whip",
     desc: "Quiz App with difficulty and category selection",
     image: "/images/quiz.png",
@@ -68,7 +77,7 @@ export const PROJECTS_DATA = [
     liveUrl: "https://quizapp-arbaaz.netlify.app/",
   },
   {
-    id: 4,
+    id: 5,
     title: "GitHub Profile finder",
     desc: "Use of Github API to find and view profiles. Used React Context and Router",
     image: "/images/gitfinder.png",
@@ -77,21 +86,12 @@ export const PROJECTS_DATA = [
     liveUrl: "https://gitprofile-finder.vercel.app/",
   },
   {
-    id: 5,
+    id: 6,
     title: "Elecar",
     desc: "Fully responsive landing page for Elecar",
     image: "/images/elecar.png",
     tags: ["HTML", "CSS", "JavaScript"],
     gitUrl: "https://github.com/arbaaz-77/elecar",
     liveUrl: "https://arbaaz-77.github.io/elecar/",
-  },
-  {
-    id: 6,
-    title: "Feedback UI",
-    desc: "Feedback recording form",
-    image: "/images/feedback.png",
-    tags: ["React", "CSS", "Context"],
-    gitUrl: "https://github.com/arbaaz-77/feedback-ui",
-    liveUrl: "https://feedbackui-arbaaz.netlify.app/",
   },
 ];
